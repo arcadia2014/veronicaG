@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+
+        #controls {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los controles se ajusten a varias líneas si es necesario */
+            justify-content: center; /* Centra los controles horizontalmente */
+            margin-bottom: 20px; /* Espacio entre los controles y el div */
+        }
+
+        label {
+            margin: 5px; /* Espacio alrededor de las etiquetas */
+        }
+
+        #div {
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="controls">
+        <label for="ancho">Ancho</label>
+        <input type="range" id="ancho" min="100" max="1000" onchange="modificacion()"> 
+
+        <label for="largo">Largo</label>
+        <input type="range" id="largo" min="100" max="1000" onchange="modificacion()"> 
+
+        <label for="sombra">Sombra</label>
+        <input type="range" id="sombra" min="1" max="100" onchange="modificacion()"> 
+
+        <label for="radio">Radio</label>
+        <input type="range" id="radio" min="1" max="1000" onchange="modificacion()"> 
+
+        <label for="transparencia">Transparencia</label>
+        <input type="range" id="transparencia" min="1" max="1000" onchange="modificacion()"> 
+
+        <label for="color">Color</label>
+        <input type="color" id="color" onchange="modificacion()"> 
+    </div>
+
+    <div id="div"></div>
+
+    <script src="./tamaño.js"></script>
+
+</body>
+</html>

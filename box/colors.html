@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezcla de Colores RGBA</title>
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            display: flex; /* Utiliza flexbox para el layout */
+            flex-direction: column; /* Coloca los elementos en columna */
+            align-items: center; /* Centra los elementos horizontalmente */
+            justify-content: center; /* Centra los elementos verticalmente */
+            height: 100vh; /* Altura del viewport completo */
+            background-color: #f0f0f0; /* Color de fondo de la página */
+        }
+        .color-box {
+            width: 200px; /* Ancho de la caja de color */
+            height: 200px; /* Altura de la caja de color */
+            border: 2px solid #000; /* Borde negro alrededor de la caja */
+            display: flex; /* Utiliza flexbox para el contenido de la caja */
+            align-items: center; /* Centra el contenido verticalmente */
+            justify-content: center; /* Centra el contenido horizontalmente */
+            font-size: 20px; /* Tamaño de la fuente dentro de la caja */
+            color: #fff; /* Color del texto dentro de la caja */
+            margin-bottom: 20px; /* Espacio debajo de la caja */
+        }
+       
+        .slider {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Div que muestra el color mezclado -->
+    <div class="color-box" id="colorBox"></div>
+    
+    <!-- Control deslizante para el componente rojo -->
+    <label for="red">Rojo: <span id="redValue">0</span></label>
+    <input type="range" id="red" class="slider" min="0" max="255" value="0">
+
+    <!-- Control deslizante para el componente verde -->
+    <label for="green">Verde: <span id="greenValue">0</span></label>
+    <input type="range" id="green" class="slider" min="0" max="255" value="0">
+
+    <!-- Control deslizante para el componente azul -->
+    <label for="blue">Azul: <span id="blueValue">0</span></label>
+    <input type="range" id="blue" class="slider" min="0" max="255" value="0">
+
+    <!-- Archivo JavaScript externo que se espera contenga la lógica para mezclar colores -->
+    <script src="./colors.js"></script>
+</body>
+</html>

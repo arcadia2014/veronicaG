@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://th.bing.com/th/id/OIP.otpWLuLWFteNqAs-_sOjxwHaDF?rs=1&pid=ImgDetMain://www.todofondos.net/wp-content/uploads/1332x850-Wallpaper-Love-Inuyasha-Inuyasha-Kagome-Image-for-Desktop.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+h2 {
+    background-color: #d990f8;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.10);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    background-color: #d990f8;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.40 ease;
+}
+
+.item img:hover {
+    opacity: 0.8;
+}
